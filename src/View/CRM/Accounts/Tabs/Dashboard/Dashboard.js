@@ -394,6 +394,13 @@ const Dashboard = () => {
     });
   };
 
+  const sample_options = [
+    {
+      id: 1,
+      name: "All Categories"
+    }
+  ]
+
   return (
     <div className="p-4 flex flex-col gap-[16px]">
       <div className="relative">
@@ -430,11 +437,6 @@ const Dashboard = () => {
                       {item.icon()}
                     </div>
                   </div>
-                  {/* <div className="w-[54px] h-[54px] p-px rounded-2xl bg-gradient-to-r from-[#c421ff] via-[#ff2164] to-[#ff9b21]">
-                    <div className="bg-white p-2 rounded-2xl">
-                      {item.icon()}
-                    </div>
-                  </div> */}
                   <div>
                     <h3 className="text-xs font-medium text-blue-900-85">
                       {item.title}
@@ -474,7 +476,7 @@ const Dashboard = () => {
           end_section={() => {
             return (
               <div className="flex items-center gap-[16px]">
-                <Select />
+                 <Select options={sample_options} title_key="name"/>
                 <YearSelection />
               </div>
             );
@@ -542,7 +544,7 @@ const Dashboard = () => {
         end_section={() => {
           return (
             <div className="flex items-center gap-[16px]">
-              <Select />
+              <Select options={sample_options} title_key="name"/>
               <YearSelection />
             </div>
           );

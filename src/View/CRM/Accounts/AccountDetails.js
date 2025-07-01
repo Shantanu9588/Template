@@ -94,22 +94,40 @@ const AccountDetails = () => {
     [active_tab]
   );
 
+  const sample_profile = {
+    title: "Truck Grear",
+    subtitle: "jillali@onechanneladmin.com"
+  }
+
+  const email_options = [
+    {
+      id: 1,
+      email: "suchithkumar@onechanneladmin.com"
+    }
+  ]
+
   return (
-    <div className="flex gap-[32px]">
+    <div className="flex gap-[32px] p-4">
       <div className="flex flex-col gap-[16px] w-[20%]">
         <SimpleCard className="px-4">
-          <Profile />
+          <Profile 
+            title={sample_profile?.title}
+            subtitle={sample_profile?.subtitle}
+          />
         </SimpleCard>
 
-        <SimpleCard className="px-4 flex item">
-          {icons.map((icon) => (
+        <SimpleCard className="py-4 flex items-center">
+          {icons.map((icon, index) => (
+            <>
             <div
               key={icon.id}
-              className="flex flex-col items-center gap-[6px] py-2"
+              className="flex flex-col items-center gap-[6px] py-2 w-[84px]"
             >
-              <span className="text-blue-900 text-base">{icon.icon()}</span>
-              <span className="text-blue-900 text-base">{icon.name}</span>
+              {icon.icon()}
+              <span className="text-blue-900 text-xs leading-[18px] font-normal">{icon.name}</span>
             </div>
+            {index !== icons?.length - 1 && <div className="h-full w-px bg-blue-900-10 px-auto" />}
+            </>
           ))}
         </SimpleCard>
 
@@ -133,20 +151,23 @@ const AccountDetails = () => {
             <FormLabel title="Account Name" />
             <TextField />
           </div>
-
+          <div className="h-px w-full bg-blue-900-10 my-3" />
           <div>
             <FormLabel title="Email" />
             <TextField />
           </div>
-
+          <div className="h-px w-full bg-blue-900-10 my-3" />
           <div>
             <FormLabel title="Phone Number" endIcon={() => <PlusIcon />} />
             <TextField />
           </div>
-
+          <div className="h-px w-full bg-blue-900-10 my-3" />
           <div>
             <FormLabel title="Contact Owner" />
-            <Select />
+            <Select 
+              options={email_options}
+              title_key="email"
+            />
           </div>
         </SimpleCard>
       </div>
