@@ -8,8 +8,8 @@ This is a modern **dashboard application** built with **React 19**. It features 
 
 - ⚛️ **React 19** with enhanced performance and modern hooks
 - 🧱 Modular component-based structure
-- 🔄 State management with React Context / Redux (optional)
-- 📊 Dashboard layout with charts, tables, widgets, etc.
+- 🔄 State management with Redux
+- 📊 Dashboard layout with charts, tables, etc.
 - 🎨 Styled using Tailwind CSS
 - 🔍 Optimized for performance and accessibility
 
@@ -18,11 +18,11 @@ This is a modern **dashboard application** built with **React 19**. It features 
 ## 📦 Tech Stack
 
 - **React 19**
-- **JavaScript (ES6+)** or **TypeScript**
+- **JavaScript (ES6+)**
 - **Routing:** React Router
-- **Styling:** Tailwind CSS / MUI / SCSS (depending on your setup)
-- **Charts (optional):** Recharts / Chart.js
-- **Icons:** React Icons / Lucide / Heroicons
+- **Styling:** Tailwind CSS
+- **Charts (optional):** Recharts
+- **Icons:** Heroicons
 
 ---
 
@@ -31,5 +31,5 @@ This is a modern **dashboard application** built with **React 19**. It features 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/react-dashboard-app.git
-cd react-dashboard-app
+git clone https://github.com/Shantanu9588/Template.git
+cd Template
