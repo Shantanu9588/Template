@@ -64,7 +64,7 @@ export default function BarChart() {
             tickLine={false} // removes tick lines
             tickFormatter={(v) => `$${v.toFixed(2)}`}
           />
-          <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+          <Tooltip cursor={false} formatter={(value) => `$${value.toFixed(2)}`} />
           <Bar dataKey="revenue" fill="#5F33D6" radius={[4, 4, 0, 0]}>
             <LabelList
               dataKey="revenue"
