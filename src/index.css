@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+
+  @theme {
+
+    --text-semi-base: 18px;
+    --text-semi-xs: 14px;
+    --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+    --color-grey-100: #F6F8F9;
+    --color-grey-100-30: rgba(246, 248, 249, 0.3);
+
+    --color-blue-900: #0E253C;
+    --color-blue-900-5: rgb(14 37 60 / 0.05);
+    --color-blue-900-10: rgb(14 37 60 / 0.10);
+    --color-blue-900-85: rgb(14 37 60 / 0.85);
+
+    --color-yellow-500: #FFB266;
+    --color-orange-400:#E48D21;
+    --color-orange-500: #E9766F;
+    --color-red-400: #D56574;
+    --color-red-500: #C04350;
+    --color-purple-200: #B2A1FD;
+    --color-purple-300: #E6E3FF;
+    --color-purple-400: #ACA0E4;
+    --color-purple-500: #7F8BD2;
+    --color-purple-600-alpha0: #596AC500;
+    --color-purple-900: #513CCE;
+   
+
+    --color-dark-indigo-800: #191934;
+    --color-dark-indigo-900: #03061C;
+
+    --drop-shadow-md: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0px 4px 6px -2px rgba(0, 0, 0, 0.5), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+
+    --gradient-radial-soft: radial-gradient(circle, #7F8BD2 0%, #596AC500 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
