@@ -33,4 +33,4 @@ This is a modern **dashboard application** built with **React 19**. It features 
 ```bash
 git clone https://github.com/Shantanu9588/Template.git
 cd Template
--- http://localhost:3000/dashboard will navigate to dashboard
+http://localhost:3000/dashboard will navigate to dashboard
