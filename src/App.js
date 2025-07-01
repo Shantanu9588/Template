@@ -1,10 +1,9 @@
 import React, { Suspense } from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { navigation } from "./constants/navigation";
 
 const App = () => {
   return (
-    <BrowserRouter>
       <Suspense>
         <Routes>
           {navigation.map((route) => (
@@ -16,7 +15,6 @@ const App = () => {
           ))}
         </Routes>
       </Suspense>
-    </BrowserRouter>
   );
 };
 
