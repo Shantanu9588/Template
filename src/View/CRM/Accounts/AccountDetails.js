@@ -131,18 +131,6 @@ const AccountDetails = () => {
           ))}
         </SimpleCard>
 
-        <SimpleCard className="px-4 flex item">
-          {icons.map((icon) => (
-            <div
-              key={icon.id}
-              className="flex flex-col items-center gap-[6px] py-2"
-            >
-              <span className="text-blue-900 text-base">{icon.icon()}</span>
-              <span className="text-blue-900 text-base">{icon.name}</span>
-            </div>
-          ))}
-        </SimpleCard>
-
         <SimpleCard
           card_title="Business Details"
           className="px-4 flex flex-col"
