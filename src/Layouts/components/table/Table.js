@@ -82,10 +82,10 @@ export default function Table({ data }) {
           </tbody>
         </table>
       </div>
-      <div className="text-right mt-4">
+      <div className="text-center py-4">
         <a
           href="#"
-          className="text-sm text-indigo-600 font-medium hover:underline"
+          className="text-sm text-indigo-600 font-medium"
         >
           View 256 more orders →
         </a>
